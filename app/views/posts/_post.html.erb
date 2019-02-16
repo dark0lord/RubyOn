@@ -10,6 +10,7 @@
 	</section>
 
 	<section>
+		<%= image_tag post.image.url(:thumb), class: 'img-thumbnail' if post.image? %>
 		<%= post.summary %>
 	</section>
 </article>
