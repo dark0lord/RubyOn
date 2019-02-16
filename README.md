@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # MyProject
 =======
+=======
+>>>>>>> 6e2bcf4d32eb2f8ad5a5c79fcfa2905e732957c6
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -25,5 +28,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+<<<<<<< HEAD
 >>>>>>> Second commit
 # RubyOn
+=======
+>>>>>>> 6e2bcf4d32eb2f8ad5a5c79fcfa2905e732957c6
