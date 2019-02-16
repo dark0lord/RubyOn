@@ -1,3 +1,14 @@
+<% if @post.errors.any? %>
+	<div>
+		<h4><%= t('common.errors') %></h4>
+		<ul>
+			<% @post.errors.full_messages.each do |message| %>
+				<li><%= message %></li>
+			<% end %>
+		</ul>
+	</div>
+<% end %>
+
 <%= form_for @post do |f| %>
 <div class="form-control">
 	<%= f.label :title %>
@@ -16,5 +27,6 @@
 
 <div class="form-control">
 	<%= f.submit 'Save' %>
+	<%= link_to 'Back', :back %>
 </div>
 <% end %>
