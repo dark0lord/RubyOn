@@ -21,6 +21,12 @@
   		</div>
   		<% end %>
   	</div>
+
+    <div>
+      <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4}) do |tag| %>
+        <%= link_to tag.name, tag_path(tag.name) %>
+      <% end %>
+    </div>
     <%= yield %>
   </body>
 </html>
