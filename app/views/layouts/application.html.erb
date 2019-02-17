@@ -14,9 +14,20 @@
 
   	<%= link_to 'New article', new_post_path%>
 
+
+    <% if user_signed_in? %>
+      <%= link_to "Exit", destroy_user_session_path, method: :delete %>
+
+    <% else %>
+    <%= link_to 'Login', new_user_session_path %>
+
+    <%= link_to 'Registration', new_user_registration_path %>
+    <% end %>
+    
   	<div>
   		<% flash.each do |name, message| %>
-  		<div>
+  		<div class="alert <%= b_class_for(name) %>">
+        <button class="close" data-dismiss="alert">&times;</button>
   			<%= message %>
   		</div>
   		<% end %>
